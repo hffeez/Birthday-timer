@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Countdown</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+    <p class="emoji">🎂</p>
+    <h1>Birthday Countdown</h1>
+    <p class="subtitle">Find out exactly how long until your big day.</p>
+
+    <div class="card">
+      <div class="field">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Username champ" />
+      </div>
+      <div class="field">
+        <label>Date of Birth</label>
+        <input type="date" id="bday" placeholder="When you entered the lobby" />
+      </div>
+      <button onclick="start()">Start Countdown</button>
+    </div>
+
+    <div class="result-card hidden" id="result">
+      <p class="result-label">Days Until Birthday</p>
+      <p class="big-num" id="days">0</p>
+
+      <div class="grid">
+        <div class="box">
+          <div class="num" id="hours">0</div>
+          <div class="lbl">Hours</div>
+        </div>
+        <div class="box">
+          <div class="num" id="mins">0</div>
+          <div class="lbl">Minutes</div>
+        </div>
+        <div class="box">
+          <div class="num" id="secs">0</div>
+          <div class="lbl">Seconds</div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="info-row">
+        <span>Next Birthday</span>
+        <span id="next-date" class="info-val"></span>
+      </div>
+      <div class="info-row">
+        <span>Age Turning</span>
+        <span id="age" class="info-val"></span>
+      </div>
+
+      <p class="message" id="message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
